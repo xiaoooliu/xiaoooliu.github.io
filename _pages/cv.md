@@ -4,9 +4,9 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 5
-cv_pdf: /cv/Resume-Xiao-Liu-v3.2-private.pdf # you can also use external links here
+cv_pdf: /assets/pdf/cv.pdf # you can also use external links here
 cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+description: Academic CV of Xiao Liu, PhD student in Computer Science and Technology at Shanghai Jiao Tong University.
 toc:
   sidebar: left
 ---
