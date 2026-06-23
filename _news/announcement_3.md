@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2024-10-31 12:00:00+0800
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Completed my role as **Machine Learning Engineer at Huawei**, where I worked on GNSS positioning algorithms and large-scale software system refactoring.

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-labelledby="title desc">
+  <title id="title">Flow-Based Models Map</title>
+  <desc id="desc">A diagram showing the evolution from coupling-layer normalizing flows to continuous flows and flow matching.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eefdf5"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 30px 'Helvetica Neue', Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 500 16px 'Helvetica Neue', Arial, sans-serif; fill: #475569; }
+      .box { fill: #ffffff; stroke: #86efac; stroke-width: 2; }
+      .t1 { font: 700 18px 'Helvetica Neue', Arial, sans-serif; fill: #0f172a; }
+      .t2 { font: 500 14px 'Helvetica Neue', Arial, sans-serif; fill: #334155; }
+      .year { font: 700 13px 'Helvetica Neue', Arial, sans-serif; fill: #16a34a; }
+    </style>
+  </defs>
+  <rect width="1200" height="540" fill="url(#bg)"/>
+  <text x="50" y="62" class="title">Flow-based models: exact likelihood, invertibility, and transport paths</text>
+  <text x="50" y="92" class="subtitle">A timeline from coupling layers to continuous-time flows and flow matching.</text>
+
+  <rect class="box" x="48" y="150" rx="18" ry="18" width="150" height="180"/>
+  <text x="75" y="190" class="t1">NICE</text>
+  <text x="75" y="214" class="year">2014</text>
+  <text x="75" y="246" class="t2">Additive coupling</text>
+  <text x="75" y="270" class="t2">Exact inverse</text>
+  <text x="75" y="294" class="t2">Simple Jacobian</text>
+
+  <rect class="box" x="218" y="150" rx="18" ry="18" width="150" height="180"/>
+  <text x="243" y="190" class="t1">RealNVP</text>
+  <text x="243" y="214" class="year">2016</text>
+  <text x="243" y="246" class="t2">Affine coupling</text>
+  <text x="243" y="270" class="t2">Multi-scale design</text>
+  <text x="243" y="294" class="t2">Image density models</text>
+
+  <rect class="box" x="388" y="150" rx="18" ry="18" width="150" height="180"/>
+  <text x="429" y="190" class="t1">Glow</text>
+  <text x="429" y="214" class="year">2018</text>
+  <text x="412" y="246" class="t2">Invertible 1x1 conv</text>
+  <text x="412" y="270" class="t2">ActNorm</text>
+  <text x="412" y="294" class="t2">Large-scale training</text>
+
+  <rect class="box" x="558" y="150" rx="18" ry="18" width="150" height="180"/>
+  <text x="585" y="190" class="t1">CNF / FFJORD</text>
+  <text x="585" y="214" class="year">2018-2019</text>
+  <text x="584" y="246" class="t2">ODE dynamics</text>
+  <text x="584" y="270" class="t2">Trace estimator</text>
+  <text x="584" y="294" class="t2">Continuous depth</text>
+
+  <rect class="box" x="728" y="150" rx="18" ry="18" width="170" height="180"/>
+  <text x="756" y="190" class="t1">Residual Flows</text>
+  <text x="756" y="214" class="year">2019</text>
+  <text x="754" y="246" class="t2">Lipschitz stability</text>
+  <text x="754" y="270" class="t2">Invertible residual maps</text>
+  <text x="754" y="294" class="t2">Improved robustness</text>
+
+  <rect class="box" x="918" y="150" rx="18" ry="18" width="220" height="180"/>
+  <text x="944" y="190" class="t1">Flow Matching / Rectified Flow</text>
+  <text x="944" y="214" class="year">2023-2024</text>
+  <text x="944" y="246" class="t2">Probability paths</text>
+  <text x="944" y="270" class="t2">Simulation-free vector field fitting</text>
+  <text x="944" y="294" class="t2">Fast sampling and OT-inspired transport</text>
+
+  <path d="M198 240 L218 240" stroke="#16a34a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M368 240 L388 240" stroke="#16a34a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M538 240 L558 240" stroke="#16a34a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M708 240 L728 240" stroke="#16a34a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M898 240 L918 240" stroke="#16a34a" stroke-width="4" stroke-linecap="round"/>
+
+  <rect x="90" y="390" rx="22" ry="22" width="1010" height="95" fill="#0f172a" opacity="0.92"/>
+  <text x="120" y="428" font-family="Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="700" fill="#f8fafc">Unifying perspective</text>
+  <text x="120" y="457" font-family="Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="500" fill="#dbeafe">All of these models learn an invertible or approximately invertible transport from a simple base distribution to a data distribution,</text>
+  <text x="120" y="480" font-family="Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="500" fill="#dbeafe">while trading off exact likelihood, Jacobian tractability, training stability, and sampling efficiency.</text>
+</svg>

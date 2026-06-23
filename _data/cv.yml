@@ -1,189 +1,133 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Xiao Liu
+  label: PhD Student in Computer Science and Technology
+  email: uceexl4@ucl.ac.uk
+  location: Shanghai, China
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: Computer Science PhD student focused on generative AI, diffusion and flow-based models, reinforcement learning, and secure large language models. I am passionate about the mathematical and algorithmic foundations of AI and their applications to scientific discovery and trustworthy AI systems. My research combines generative modeling with predictive signals and RL to solve real-world problems such as protein and antibody design and model security.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+      username: xiaoooliu
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
+      - institution: Shanghai Jiao Tong University
+        location: Shanghai, China
+        area: Computer Science and Technology
         studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
+        start_date: 2025-04
+        end_date: present
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
+      - institution: University College London and University of Cambridge
+        location: London and Cambridge, UK
+        area: Connected Electronic and Photonic Systems
+        studyType: MRes
+        start_date: 2020-09
+        end_date: 2021-12
+        score: Merit
+
+      - institution: University of Nottingham Ningbo China
+        location: Zhejiang, China and Nottingham, UK
+        area: Electrical and Electronic Engineering
+        studyType: BEng
+        start_date: 2016-09
+        end_date: 2020-05
+        score: First Class Honours
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: Shanghai Jiao Tong University
+        position: Researcher
+        location: Shanghai, China
+        start_date: 2025
+        end_date: present
+        summary: "GABIF: An Adaptive Guided Graph Denoising Framework for Antibody Conditional Inverse Folding. NeurIPS 2026 submission; joint first author, second-listed author."
         highlights:
-          - Relativity
-          - Description 2.
+          - Co-designed a guided discrete diffusion framework for conditional sequence generation and property-aware optimization.
+          - Co-led the algorithmic design, experimental protocol, benchmark evaluation, ablation studies, and testing pipeline.
+          - Integrated external predictive signals into the generative sampling process to improve downstream target properties.
+          - Co-wrote and revised the manuscript with the other joint first author.
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: Shanghai Jiao Tong University
+        position: Researcher
+        location: Shanghai, China
+        start_date: 2025
+        end_date: present
+        summary: "Permutation-based Transformer Model Protection. Ongoing exploratory research on secure and privacy-preserving model architectures."
         highlights:
-          - Description 1.
-          - Description 2.
+          - Exploring permutation-equivalence mechanisms to enhance Transformer architecture confidentiality under black-box and white-box attacks.
+          - Investigating model transformation strategies that preserve functional behavior while increasing resistance to model extraction.
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: Huawei Technologies Co., Ltd.
+        position: Engineer, Machine Learning
+        location: China
+        start_date: 2022-06
+        end_date: 2024-10
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - Designed and implemented machine learning algorithms to improve GNSS positioning accuracy under complex terminal scenarios.
+          - Led large-scale C software project refactoring to improve code modularity, integrity, maintainability, and system reliability.
+          - Provided algorithm optimization and technical support for terminal products including smartphones and smart watches.
 
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+      - company: University College London & University of Cambridge
+        position: Research Student
+        location: London, UK
+        start_date: 2020-05
+        end_date: 2021-08
+        summary: "Signal Processing for Cuff-less Blood Pressure Measurement Using PPG."
+        highlights:
+          - Proposed a machine learning framework to improve cuff-less blood pressure estimation from PPG signals.
+          - Implemented PPG signal prediction and restoration with CNN and LSTM-based models in TensorFlow.
+          - Modeled nonlinear relationships between PPG features and blood pressure using deep learning methods.
+          - Supervisors: Prof. Andreas Demosthenous and Prof. Dai Jiang.
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
 
     Publications:
-      - title: Zur Elektrodynamik bewegter Körper
+      - title: "GABIF: An Adaptive Guided Graph Denoising Framework for Antibody Conditional Inverse Folding"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+          - Mingwei Liu
+          - Xiao Liu
+          - Kai Yi
+          - Feng Tan
+          - Yu Guang Wang
+        publisher: "NeurIPS 2026 submission"
+        releaseDate: 2026
+        url: /assets/pdf/GABIF.pdf
+        summary: An adaptive guided graph denoising framework for antibody conditional inverse folding that integrates predictive signals into the generative process for property-aware optimization.
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+    Awards:
+      - title: Best QCC Award (2nd Prize)
+        awarder: Huawei Technologies
+        date: 2024
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+      - title: Xinxing Award (Twice)
+        awarder: HiSilicon
+        date: 2024
+
+      - title: Nottingham Advanced Award
+        awarder: University of Nottingham Ningbo China
+        date: 2020
+
+      - title: UNNC Dream Scholarship
+        awarder: University of Nottingham Ningbo China
+        date: 2019
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Programming
+        level: Advanced
+        keywords: Python, C/C++, Bash, LaTeX
 
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
       - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
+        level: Advanced
+        keywords: PyTorch, TensorFlow/Keras, Scikit-learn, Transformers
 
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
+      - name: Generative AI
+        level: Advanced
+        keywords: Diffusion Models, Flow-based Models, Graph Neural Networks, Protein Design, Scientific Generative Modeling
 
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+      - name: LLM Systems
+        level: Advanced
+        keywords: vLLM, Model Serving, Local LLM Deployment
 
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Tools and Platforms
+        level: Advanced
+        keywords: Linux, Docker, Git, VS Code, Conda

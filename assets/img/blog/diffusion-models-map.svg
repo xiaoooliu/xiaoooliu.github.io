@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Diffusion Models Map</title>
+  <desc id="desc">A diagram showing the path from Langevin dynamics to DDPM, DDIM, guided diffusion, and discrete diffusion.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6fbff"/>
+      <stop offset="100%" stop-color="#eef2ff"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 30px 'Helvetica Neue', Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 500 16px 'Helvetica Neue', Arial, sans-serif; fill: #475569; }
+      .card-title { font: 700 20px 'Helvetica Neue', Arial, sans-serif; fill: #0f172a; }
+      .card-text { font: 500 15px 'Helvetica Neue', Arial, sans-serif; fill: #334155; }
+      .small { font: 500 13px 'Helvetica Neue', Arial, sans-serif; fill: #64748b; }
+      .year { font: 700 14px 'Helvetica Neue', Arial, sans-serif; fill: #2563eb; }
+    </style>
+  </defs>
+  <rect width="1200" height="520" fill="url(#bg)"/>
+  <text x="54" y="64" class="title">Diffusion Models: from Langevin dynamics to discrete diffusion</text>
+  <text x="54" y="94" class="subtitle">A compact map of the core algorithmic branches discussed in the post.</text>
+
+  <rect x="50" y="150" rx="18" ry="18" width="190" height="230" fill="url(#card)" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="74" y="190" class="card-title">Langevin / Score</text>
+  <text x="74" y="218" class="year">2019-2021</text>
+  <text x="74" y="250" class="card-text">• score matching</text>
+  <text x="74" y="276" class="card-text">• annealed Langevin</text>
+  <text x="74" y="302" class="card-text">• SDE formulation</text>
+  <text x="74" y="340" class="small">Stochastic sampling on a</text>
+  <text x="74" y="360" class="small">continuously noised space.</text>
+
+  <rect x="280" y="150" rx="18" ry="18" width="190" height="230" fill="url(#card)" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="318" y="190" class="card-title">DDPM</text>
+  <text x="318" y="218" class="year">2020</text>
+  <text x="304" y="250" class="card-text">• Gaussian forward chain</text>
+  <text x="304" y="276" class="card-text">• learned reverse denoiser</text>
+  <text x="304" y="302" class="card-text">• variational training</text>
+  <text x="304" y="340" class="small">The canonical discrete-time</text>
+  <text x="304" y="360" class="small">diffusion formulation.</text>
+
+  <rect x="510" y="150" rx="18" ry="18" width="190" height="230" fill="url(#card)" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="548" y="190" class="card-title">DDIM</text>
+  <text x="548" y="218" class="year">2021</text>
+  <text x="534" y="250" class="card-text">• non-Markovian sampler</text>
+  <text x="534" y="276" class="card-text">• deterministic trajectories</text>
+  <text x="534" y="302" class="card-text">• fewer sampling steps</text>
+  <text x="534" y="340" class="small">Same training objective,</text>
+  <text x="534" y="360" class="small">different generation path.</text>
+
+  <rect x="740" y="150" rx="18" ry="18" width="190" height="230" fill="url(#card)" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="767" y="190" class="card-title">Guided Diffusion</text>
+  <text x="767" y="218" class="year">2021-2022</text>
+  <text x="764" y="250" class="card-text">• classifier guidance</text>
+  <text x="764" y="276" class="card-text">• classifier-free guidance</text>
+  <text x="764" y="302" class="card-text">• conditional control</text>
+  <text x="764" y="340" class="small">Steers the reverse process</text>
+  <text x="764" y="360" class="small">toward desired semantics.</text>
+
+  <rect x="970" y="150" rx="18" ry="18" width="180" height="230" fill="url(#card)" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="995" y="190" class="card-title">Discrete Diffusion</text>
+  <text x="995" y="218" class="year">2021-2024</text>
+  <text x="994" y="250" class="card-text">• D3PMs</text>
+  <text x="994" y="276" class="card-text">• masked transitions</text>
+  <text x="994" y="302" class="card-text">• entropy-based scores</text>
+  <text x="994" y="340" class="small">Extends diffusion ideas to</text>
+  <text x="994" y="360" class="small">tokens, graphs, and symbols.</text>
+
+  <path d="M240 265 C255 265 265 265 280 265" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+  <path d="M470 265 C485 265 495 265 510 265" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+  <path d="M700 265 C715 265 725 265 740 265" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+  <path d="M930 265 C945 265 955 265 970 265" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+
+  <circle cx="240" cy="265" r="6" fill="#2563eb"/>
+  <circle cx="470" cy="265" r="6" fill="#2563eb"/>
+  <circle cx="700" cy="265" r="6" fill="#2563eb"/>
+  <circle cx="930" cy="265" r="6" fill="#2563eb"/>
+
+  <text x="54" y="450" class="small">Core conceptual split:</text>
+  <text x="220" y="450" class="small">continuous-state score-based diffusion</text>
+  <text x="545" y="450" class="small">→ accelerated or guided samplers</text>
+  <text x="845" y="450" class="small">→ discrete-state generalizations</text>
+</svg>

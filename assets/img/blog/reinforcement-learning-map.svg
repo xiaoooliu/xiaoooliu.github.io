@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Reinforcement Learning Map</title>
+  <desc id="desc">A diagram showing the development of reinforcement learning from Bellman equations to modern world models and sequence-style RL.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffaf6"/>
+      <stop offset="100%" stop-color="#eef8ff"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 30px 'Helvetica Neue', Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 500 16px 'Helvetica Neue', Arial, sans-serif; fill: #475569; }
+      .card { fill: #ffffff; stroke: #fdba74; stroke-width: 2; }
+      .head { font: 700 18px 'Helvetica Neue', Arial, sans-serif; fill: #0f172a; }
+      .body { font: 500 14px 'Helvetica Neue', Arial, sans-serif; fill: #334155; }
+      .year { font: 700 13px 'Helvetica Neue', Arial, sans-serif; fill: #ea580c; }
+    </style>
+  </defs>
+  <rect width="1200" height="560" fill="url(#bg)"/>
+  <text x="48" y="62" class="title">Reinforcement learning: from Bellman recursion to world models</text>
+  <text x="48" y="92" class="subtitle">A compact overview of major milestones and the ideas they introduced.</text>
+
+  <rect x="50" y="150" width="140" height="170" rx="18" ry="18" class="card"/>
+  <text x="78" y="188" class="head">Bellman</text>
+  <text x="78" y="212" class="year">1950s</text>
+  <text x="78" y="244" class="body">Dynamic programming</text>
+  <text x="78" y="268" class="body">Value recursion</text>
+  <text x="78" y="292" class="body">Optimality principle</text>
+
+  <rect x="220" y="150" width="140" height="170" rx="18" ry="18" class="card"/>
+  <text x="250" y="188" class="head">Q-learning</text>
+  <text x="250" y="212" class="year">1992</text>
+  <text x="250" y="244" class="body">Off-policy TD</text>
+  <text x="250" y="268" class="body">Model-free control</text>
+  <text x="250" y="292" class="body">Bootstrapping</text>
+
+  <rect x="390" y="150" width="140" height="170" rx="18" ry="18" class="card"/>
+  <text x="414" y="188" class="head">Policy Gradient</text>
+  <text x="414" y="212" class="year">1999</text>
+  <text x="414" y="244" class="body">Direct policy learning</text>
+  <text x="414" y="268" class="body">Stochastic optimization</text>
+  <text x="414" y="292" class="body">Actor-critic basis</text>
+
+  <rect x="560" y="150" width="140" height="170" rx="18" ry="18" class="card"/>
+  <text x="607" y="188" class="head">DQN</text>
+  <text x="607" y="212" class="year">2015</text>
+  <text x="585" y="244" class="body">Deep value learning</text>
+  <text x="585" y="268" class="body">Replay buffer</text>
+  <text x="585" y="292" class="body">Target network</text>
+
+  <rect x="730" y="150" width="160" height="170" rx="18" ry="18" class="card"/>
+  <text x="764" y="188" class="head">TRPO / PPO</text>
+  <text x="764" y="212" class="year">2015-2017</text>
+  <text x="754" y="244" class="body">Stable policy updates</text>
+  <text x="754" y="268" class="body">Trust regions</text>
+  <text x="754" y="292" class="body">Clipped objectives</text>
+
+  <rect x="920" y="150" width="210" height="170" rx="18" ry="18" class="card"/>
+  <text x="948" y="188" class="head">SAC / DT / DreamerV3</text>
+  <text x="948" y="212" class="year">2018-2023</text>
+  <text x="948" y="244" class="body">Entropy-regularized control</text>
+  <text x="948" y="268" class="body">Sequence-model RL</text>
+  <text x="948" y="292" class="body">Latent world models</text>
+
+  <path d="M190 236 L220 236" stroke="#ea580c" stroke-width="4" stroke-linecap="round"/>
+  <path d="M360 236 L390 236" stroke="#ea580c" stroke-width="4" stroke-linecap="round"/>
+  <path d="M530 236 L560 236" stroke="#ea580c" stroke-width="4" stroke-linecap="round"/>
+  <path d="M700 236 L730 236" stroke="#ea580c" stroke-width="4" stroke-linecap="round"/>
+  <path d="M890 236 L920 236" stroke="#ea580c" stroke-width="4" stroke-linecap="round"/>
+
+  <rect x="170" y="390" width="860" height="110" rx="24" ry="24" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="205" y="430" font-family="Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">Agent-environment loop</text>
+  <text x="205" y="462" font-family="Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="500" fill="#334155">state s<tspan baseline-shift="sub" font-size="13">t</tspan> → action a<tspan baseline-shift="sub" font-size="13">t</tspan> → reward r<tspan baseline-shift="sub" font-size="13">t</tspan>, next state s<tspan baseline-shift="sub" font-size="13">t+1</tspan></text>
+  <text x="205" y="488" font-family="Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="500" fill="#334155">Modern RL differs mainly in how it estimates values, updates policies, uses models, and manages exploration.</text>
+</svg>
